@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Evaluacion De Aprendizaje</title>
+	<link rel="stylesheet" href="css/estilo.css"> 
+    <link rel="stylesheet" href="css/contacto.css">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>  
+ 
+<body>
+  <header class="header"> 
+    <div id="logo"><img class="logo" src="img/logo2.png" alt="logotipo"></div>
+
+    <div class="contenedorBusqueda">
+      <datalist id="listaenfermedades">
+        <option value="Coronavirus">
+        <option value="Dengue">
+        <option value="Gripe A">
+        <option value="Hepatitis">
+        <option value="Sarampión">
+        <option value="Tuberculosis">
+      </datalist>
+      <input type="search" name="busqueda" list="listaenfermedades" placeholder=" buscar...">
+      <button  type="submit"><span class="icon-lupa"><i class="fa fa-search"></i></span></button>
+
+    </div> 
+
+		<div class="RedesSociales">
+      <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+      <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>   
+  </header> 
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="enfermedades.html">Enfermedades</a></li>
+      <li><a href="vacunacion.html">Vacunación</a></li>
+      <li><a href="mapasHospitales.html">Hospitales</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+  <a class="desplegable"></a>
+
+  <main>
+    <div class="textoContacto"><h4>Datos de Contacto</h4></div>
+    <section class="contenedorContactos">    
+      <article class="contacto">
+        <div class="datosgeneral">
+
+          <form action="#" onsubmit="return validar()" name="form">
+
+            <!--label for="nombre">Nombre:</label><br-->
+            <input class="datos" type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre"><br>
+
+            <!--label for="apellido">Apellido:</label><br-->
+            <input class="datos" type="text" id="apellido" name="apellido" placeholder="Ingrese Apellido"><br>
+
+            <!--label for="telefono">Telefono:</label><br-->
+            <input class="datos" type="text" id="telefono" name="telefono" placeholder="0000-0000"><br>
+
+            <!--label for="mail">Email:</label><br-->
+            <input class="datos" type="email" name="email" id="email" placeholder="name@example.com"><br>
+
+            <!--label for="contador">Mensaje:</label><br-->
+            <textarea class="datos" name="contador" id="contador" onkeyup="contarcaracteres();" cols="76" rows="10" placeholder="Mensaje..."></textarea>
+            <div id="res" class="textoContador">0 caractere/s</div>
+          
+            <button type="submit" class="btn_Formulario">Enviar</button>
+            <div id="mensajeError" class="error"></div>
+
+          </form>
+        </div>
+      </article>
+      
+      <article class="contacto">
+        <p><span class="iconos"><i class="fas fa-map-marker-alt"></i></span> Dirección:Florencio Varela 1903 (B1754JEC)</p>
+        <p><span class="iconos"><i class="fas fa-map-marker-alt"></i></span> Localidad:San Justo, Buenos Aires, Argentina</p>
+        <p><span class="iconos"><i class="fas fa-phone-alt"></i></span> Tel:(011) 4321-5678</p>
+        <p><span class="iconos"><i class="fas fa-mobile-alt"></i></span> cel:(+549) 11-3412-5678</p>
+        <p><span class="iconos"><i class="far fa-envelope"></i></span> mail:cemsj@gmail.com</p>
+
+        <div class="RedesSocialesContacto">
+          <p><span class="iconos"><i class="fas fa-globe"></i></span> Redes Sociales:</p>
+          <div class="redesSoc">
+            <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+            <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+          </div>
+        </div>
+      </article> 
+    </section>
+
+    <div class="textoMapa"><h4>Ubicación</h4></div>
+    <section class="contenedorContactos" >   
+      <article class="verUbicacion">
+       <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.398700906976!2d-58.56479398517926!3d-34.66988558044242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3e02599%3A0x5f178c9d980d3f8b!2sFlorencio%20Varela%201903%2C%20B1754JEC%20San%20Justo%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1570162156559!5m2!1ses-419!2sar"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>   
+      </article>        
+    </section>     
+  </main>
+
+  <footer>
+    <div class="datosAlumno">
+      <p> Datos del grupo:<br>Di Ludovico Maximiliano</p>
+    </div>
+
+	  <div class="menuInferior">
+      <p> Menú Inferior:</p>
+		  <ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="enfermedades.html">Enfermedades</a></li>
+			  <li><a href="vacunacion.html">Vacunación</a></li>
+			  <li><a href="mapasHospitales.html">Hospitales</a></li>
+			  <li><a href="contacto.html">Contacto</a></li>
+		  </ul>
+    </div>
+
+	  <div class="RedesSociales">
+      <p> Redes Sociales:</p>
+		  <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+		  <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+		  <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+	  </div>
+  </footer>
+  
+  <!--javascript y jquery-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/contacto.js"></script>
+  <script src="js/contactoContador.js"></script>
+
+</body>
+</html>

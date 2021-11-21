@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Evaluacion De Aprendizaje</title>
+	<link rel="stylesheet" href="css/estilo.css">
+
+    <!--Slider-->
+    <link rel="stylesheet" href="nivoslider/nivocss/nivo-slider.css"/>
+    <link rel="stylesheet" href="nivoslider/nivocss/default.css"/>
+  
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+</head>   
+
+<body>
+  <header class="header"> 
+	  <div id="logo"><img class="logo" src="img/logo2.png" alt="logotipo"></div>
+
+      <div class="contenedorBusqueda">
+        <datalist id="listaenfermedades">
+          <option value="Coronavirus">
+          <option value="Dengue">
+          <option value="Gripe A">
+          <option value="Hepatitis">
+          <option value="Sarampión">
+          <option value="Tuberculosis"> 
+        </datalist>
+        <input type="search" name="busqueda" list="listaenfermedades" placeholder=" buscar...">
+        <button  type="submit"><span class="icon-lupa"><i class="fa fa-search"></i></span></button>
+
+      </div>
+
+		<div class="RedesSociales">
+      <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+      <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>  
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="enfermedades.html">Enfermedades</a></li>
+      <li><a href="vacunacion.html">Vacunación</a></li>
+      <li><a href="mapasHospitales.html">Hospitales</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+  <a class="desplegable"></a>
+
+  <main>
+    <section class="contenedorSlider">
+      <article class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">  
+          <img src="img/1.jpg" alt="" title="" /> 
+          <img src="img/2.jpg" alt="" data-transition="slideInLeft" title="" /> 
+          <img src="img/3.jpg" alt="" title="" /> 
+          <img src="img/4.jpg" alt="" title="" />
+        </div>
+      </article>
+    </section> 
+
+    <section id="menuCirculos">
+      <h1>Centro de Estudios Medicos San Justo</h1>
+
+      <article class="contenedorCirculos">
+        <div class="circulos">
+          <img src="img/e.jpg" alt="enfermedades">
+          <p><a href="enfermedades.html" class="btn">Enfermedades</a></p>
+        </div>
+            
+        <div class="circulos">
+          <img src="img/v.jpg" alt="vacunaciones">
+          <p><a href="vacunacion.html" class="btn">Vacunaciones</a></p>
+        </div>
+        
+        <div class="circulos">
+          <img src="img/h.jpg" alt="hospitales">
+          <p><a href="mapasHospitales.html" class="btn">Hospitales</a></p>
+        </div>      
+      </article> 
+    </section>
+      
+    <aside class="banner">
+      <div class="bannerInfo">
+        <h2 class="texto1">Si tenes sintomas de COVID-19<br><span class="tamaño">LLAMA AL</span></h2>
+        <h2 class="texto2"><i class="fas fa-phone-alt" id="iconoTel"></i>148</h2> 
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="datosAlumno">
+      <p> Datos del grupo:<br>Di Ludovico Maximiliano</p>
+    </div>
+
+	  <div class="menuInferior">
+      <p> Menú Inferior:</p>
+		  <ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="enfermedades.html">Enfermedades</a></li>
+			  <li><a href="vacunacion.html">Vacunación</a></li>
+        <li><a href="mapasHospitales.html">Hospitales</a></li>
+			  <li><a href="contacto.html">Contacto</a></li>
+		  </ul>
+    </div>
+
+	  <div class="RedesSociales">
+      <p> Redes Sociales:</p>
+		  <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+		  <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+		  <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+	  </div>
+  </footer>
+  
+  <!--javascript y jquery-->
+  <script src="js/jquery.min.js"></script> 
+  <script type="text/javascript" src="nivoslider/nivojs/jquery.nivo.slider.js"></script> 
+  <script type="text/javascript" src="js/nivo.slider.js"></script>
+  <script src="js/funciones.js"></script>
+
+</body>
+</html>

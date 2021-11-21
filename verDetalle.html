@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Evaluacion De Aprendizaje</title>
+	<link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/verDetalle.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+ 
+</head> 
+
+<body>
+  <header class="header"> 
+    <div id="logo"><img class="logo" src="img/logo2.png" alt="logotipo"></div>
+
+    <div class="contenedorBusqueda">
+      <datalist id="listaenfermedades">
+        <option value="Coronavirus">
+        <option value="Dengue">
+        <option value="Gripe A">
+        <option value="Hepatitis">
+        <option value="Sarampión">
+        <option value="Tuberculosis">
+      </datalist>
+      <input type="search" name="busqueda" list="listaenfermedades" placeholder=" buscar...">
+      <button  type="submit"><span class="icon-lupa"><i class="fa fa-search"></i></span></button>
+
+    </div>
+
+		<div class="RedesSociales">
+      <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+      <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>   
+  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="enfermedades.html">Enfermedades</a></li>
+      <li><a href="vacunacion.html">Vacunación</a></li>
+      <li><a href="mapasHospitales.html">Hospitales</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+  <a class="desplegable"></a>
+
+  <main>
+    <h4 id="detalleEnfermedad">Coronavirus (COVID-19)</h4>
+    <section class="contenedorVerDetalles">
+      <article class="verDetalleEnf">
+        <img src="img/corona.jpg" alt="">
+      </article>
+      <article class="verDetalleEnf">
+        <h5 id="textoEnfermedad">Descripción:</h5>
+        <p  id="descripciones">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum,lorem ipsum dolor sit amet anim. 
+        </p>
+      </article>
+    </section>
+
+    <h4 id="textoFormulario">Formulario de Detencción (TEST) de Coronavirus</h4>
+    <section class="contenedorVerDetalles">  
+      <article class="verDetalle">
+        <div class="infoFormulario">
+          <p>Hola usuario! Si tienes síntomas de COVID19 o has estado en contactocon una persona afectada deberías hacer un control y seguimiento diario de tussíntomas.<br>Esta aplicación te permitirá hacer un seguimiento de la evolución de lossíntomas y te dará las indicaciones y consejos a seguir en cada caso.El uso de este servicio supone la aceptación de los términos y la política deprivacidad descritos en 'Ver las condiciones y políticas.</p>
+        </div>
+        <h5>Sintomas</h5>
+        <div class="contenedorImagen">
+          <img src="img/23-fiebre-tos.png">
+          <img src="img/24-fiebre-dolor-garganta.png">
+          <img src="img/25-fiebre-dificultad-respirar.png">    
+        </div>
+      </article>
+
+      <article class="verDetalle">
+        
+        <form action="#" onsubmit="return validar()" name="form">
+
+          <!--label for="nombre">Nombre:</label><br-->
+            <input  class="redondeado" id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" ><br>
+
+          <!--label for="apellido">Apellido:</label><br-->
+            <input class="redondeado" id="apellido" type="text" name="apellido" placeholder="Ingrese su apellido" ><br>
+
+          <!--label for="dni">Dni:</label><br-->
+            <input  class="redondeado" id="dni" type="text" name="dni" placeholder="Ingrese su dni" min="0" max="8"><br>
+
+          <!--label for="telefono">Telefono:</label><br-->
+            <input class="redondeado" id="telefono" type="text" name="telefono" placeholder="Ingrese su Telefono"><br>
+
+          <!--label for="ciudad">Ciudad:</label><br-->
+            <input class="redondeado" id="ciudad" type="text" name="ciudad" placeholder="Ingrese su ciudad" ><br>
+
+          <label for="tipo_sexo">Sexo:</label><br>
+            <input id="tipo_sexo" type="radio" name="tipo_sexo" value="Hombre"> H
+            <input id="tipo_sexo" type="radio" name="tipo_sexo" value="Mujer"> M<br>
+
+          <label for="seleccionPais">¿Has viajado al exterior de la Republica Argentina?</label><br>
+            <input id="si" type="radio" name="seleccionPais" value="si" onchange="cambiar()"> Si
+            <input id="no" type="radio" name="seleccionPais" value="no" onchange="cambiar()"> No<br>
+
+          <label for="paises">Paises:</label><br>
+            <select class="redondeado" id="paises" name="paises">
+              <option value="1">Paises Visitados...</option>
+              <option value="2">Brasil</option>
+              <option value="3">EE.UU</option>
+              <option value="4">España</option>
+            </select>
+
+          <p>Por favor, indica los sintomas que presentas:</p><br>
+        
+          <label for="sintoma1">¿Tuviste Fiebre mayor a 38 grados?</label><br>
+            <input id="sintoma1" type="radio" name="sintoma1" value="si"> Si
+            <input id="sintoma1" type="radio" name="sintoma1" value="no"> No<br>
+
+          <label for="sintoma2">¿Tuviste Dolor de cabeza?</label><br>
+            <input id="sintoma2" type="radio" name="sintoma2" value="si"> Si
+            <input id="sintoma2" type="radio" name="sintoma2" value="no"> No<br>
+
+          <label for="sintoma3">¿Tuviste una tos persistente?</label><br>
+            <input id="sintoma3" type="radio" name="sintoma3" value="si"> Si
+            <input id="sintoma3" type="radio" name="sintoma3" value="no"> No<br>
+
+          <label for="sintoma4">¿Tuviste Dolor de garganta?</label><br>
+            <input id="sintoma4" type="radio" name="sintoma4" value="si"> Si
+            <input id="sintoma4" type="radio" name="sintoma4" value="no"> No<br>
+
+          <label for="sintoma5">¿Tuviste Dificultad para respirar?</label><br>
+            <input id="sintoma5" type="radio" name="sintoma5" value="si" onchange="cambiar()"> Si
+            <input id="sintoma5" type="radio" name="sintoma5" value="no" onchange="cambiar()"> No<br>
+      
+
+          <!--label for="direccion">Direccion:</label><br-->
+            <input class="redondeado" id="direccion" type="text" name="direccion" placeholder="Ingrese su direccion" ><br>
+
+          <!--label for="ciudad">Ciudad:</label><br-->
+            <input class="redondeado" id="ciudad" type="text" name="ciudad" placeholder="Ingrese su ciudad" ><br>
+
+          <button type="submit" class="btn_Test">Enviar Test</button>
+          <div id="mensajeError" class="error"></div>
+
+        </form >    
+      </article>          
+    </section>
+
+    <h4 id="textoPrecaucion">Medidas de Precaución</h4>
+    <section class="contenedorVerDetalles">
+      <article class="verDetalleImagen">
+        <div class="contenedorImagenDePrecaucion">
+          <img src="img/14-lavarse-manos.png"><img src="img/15-estornudar.png">
+          <img src="img/16-tocar-nariz.png"><img src="img/17-ventilar.png">
+          <img src="img/18-limpiar-objetos.png"><img src="img/19-permanecer-domicilio.png">
+          <img src="img/20-reducir-contacto.png"><img src="img/21-no-compartir-mate.png">
+        </div>    
+      </article>        
+    </section>
+
+    <h4 id="textoHospital">Hospital Especializado en la Enfermedad</h4>
+    <section class="contenedorVerDetalles"> 
+      <article class="verDetalle">
+        <div class="infoMapa">
+          <h5>Hospital Dr. Alberto Balestrini</h5>
+          <p><span class="iconos"><i class="fas fa-phone-alt"></i></span> Teléfono: (011) 4620-2305</p>
+          <p><span class="iconos"><i class="fas fa-map-marker-alt"></i></span> Dirección: Av. Monseñor Bufano, B1778</p>
+          <p><span class="iconos"><i class="fas fa-map-marker-alt"></i></span> Ciudad: Cdad. Evita, Buenos Aires</p>
+        </div>
+        <div class="imagenHospital">
+          <img src="img/Balestrini.jpg">
+        </div>
+      </article>
+
+      <article class="verDetalle">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.913327230786!2d-58.535114685178186!3d-34.70736598043266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf49c77b2f7b%3A0xd5052a953205c954!2sHospital%20Dr.%20Alberto%20Balestrini!5e0!3m2!1ses-419!2sar!4v1588270555273!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </article>         
+    </section> 
+  </main>
+
+  <footer>
+    <div class="datosAlumno">
+      <p> Datos del grupo:<br>Di Ludovico Maximiliano</p>
+    </div>
+
+    <div class="menuInferior">
+      <p> Menú Inferior:</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="enfermedades.html">Enfermedades</a></li>
+        <li><a href="vacunacion.html">Vacunación</a></li>
+        <li><a href="mapasHospitales.html">Hospitales</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="RedesSociales">
+      <p> Redes Sociales:</p>
+      <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+      <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>
+  </footer>
+  
+  <!--javascript y jquery-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/verDetalleValidacion.js"></script>
+  <script src="js/verDetalleOcultar.js"></script>
+
+</body>
+</html>

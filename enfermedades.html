@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Evaluacion De Aprendizaje</title>
+	<link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/enfermedades.css">
+  
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+</head>  
+
+<body>
+  <header class="header"> 
+    <div id="logo"><img class="logo" src="img/logo2.png" alt="logotipo"></div>
+
+    <div class="contenedorBusqueda">
+      <datalist id="listaenfermedades">
+        <option value="Coronavirus">
+        <option value="Dengue">
+        <option value="Gripe A">
+        <option value="Hepatitis">
+        <option value="Sarampión">
+        <option value="Tuberculosis">
+      </datalist>
+      <input type="search" name="busqueda" list="listaenfermedades" placeholder=" buscar...">
+      <button  type="submit"><span class="icon-lupa"><i class="fa fa-search"></i></span></button>
+
+    </div> 
+
+		<div class="RedesSociales">
+      <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+      <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>   
+  </header>
+
+    <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="enfermedades.html">Enfermedades</a></li>
+      <li><a href="vacunacion.html">Vacunación</a></li>
+      <li><a href="mapasHospitales.html">Hospitales</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+  <a class="desplegable"></a>
+
+  <main>
+    <div class="textoEnf"><h4>Enfermedades</h4></div>
+
+    <div class="busquedaEnf">
+      <form action="#" method="post">
+        <input type="search" name="busqueda" list="listaenfermedades" placeholder=" Filtrar por enfermedades...">
+      </form>
+      <datalist id="listaenfermedades">
+        <option value="Coronavirus">
+        <option value="Dengue">
+        <option value="Gripe A">
+        <option value="Hepatitis">
+        <option value="Sarampión">
+        <option value="Tuberculosis">
+      </datalist>     
+    </div>
+
+    <section class="enfermedades">
+      <article class="enfermedad">
+        <img src="img/corona.jpg" alt="">
+        <h4>Coronavirus (COVID-19)</h4>
+        <p class="descripciones">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p><a href="verDetalle.html" class="btn_Detalle">Ver Detalle</a></p>
+      </article> 
+
+      <article class="enfermedad">
+        <img src="img/dengue.jpg" alt="">
+        <h4>Dengue</h4>
+        <p class="descripciones">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p><a href="verDetalle.html" class="btn_Detalle">Ver Detalle</a></p>
+      </article>
+
+      <article class="enfermedad">
+        <img src="img/h1n1.jpg" alt="">
+        <h4>Gripe A (H1N1)</h4>
+        <p class="descripciones">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p><a href="verDetalle.html" class="btn_Detalle">Ver Detalle</a></p>
+      </article>
+
+      <article class="enfermedad">
+        <img src="img/hepatitis.jpg" alt="">
+        <h4>Hepatitis</h4>
+        <p class="descripciones">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p><a href="verDetalle.html" class="btn_Detalle">Ver Detalle</a></p>
+      </article>
+
+      <article class="enfermedad">
+        <img src="img/sarampion.jpg" alt="">
+        <h4>Sarampión</h4>
+        <p class="descripciones">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p><a href="verDetalle.html" class="btn_Detalle">Ver Detalle</a></p>
+      </article>
+
+      <article class="enfermedad">
+        <img src="img/tuberculosis.jpg" alt="">
+        <h4>Tuberculosis</h4>
+        <p class="descripciones">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p><a href="verDetalle.html" class="btn_Detalle">Ver Detalle</a></p>
+      </article>        
+    </section>  
+  </main>
+
+  <footer>
+    <div class="datosAlumno">
+      <p> Datos del grupo:<br>Di Ludovico Maximiliano</p>
+    </div>
+
+	  <div class="menuInferior">
+      <p> Menú Inferior:</p>
+		  <ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="enfermedades.html">Enfermedades</a></li>
+			  <li><a href="vacunacion.html">Vacunación</a></li>
+			  <li><a href="mapasHospitales.html">Hospitales</a></li>
+			  <li><a href="contacto.html">Contacto</a></li>
+		  </ul>
+    </div>
+
+	  <div class="RedesSociales">
+      <p> Redes Sociales:</p>
+		  <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+		  <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+		  <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+	  </div>
+  </footer>
+  
+  <!--javascript y jquery-->
+  <!--menu resonsive-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/funciones.js"></script> 
+
+</body>
+</html>

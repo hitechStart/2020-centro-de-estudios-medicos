@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluacion De Aprendizaje</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  
+  <!--Responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head> 
+
+<body> 
+  <header class="header">
+    <div id="logo"><img class="logo" src="img/logo2.png" alt="logotipo"></div>
+
+    <div class="contenedorBusqueda">
+      <datalist id="listaenfermedades">
+        <option value="Coronavirus">
+        <option value="Dengue">
+        <option value="Gripe A">
+        <option value="Hepatitis">
+        <option value="Sarampión">
+        <option value="Tuberculosis">
+      </datalist>
+      <input type="search" name="busqueda" list="listaenfermedades" placeholder=" buscar...">
+      <button  type="submit"><span class="icon-lupa"><i class="fa fa-search"></i></span></button>
+
+    </div>
+
+    <div class="RedesSociales">
+      <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" ></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+      <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>  
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="enfermedades.html">Enfermedades</a></li>
+      <li><a href="vacunacion.html">Vacunación</a></li>
+      <li><a href="mapasHospitales.html">Hospitales</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <a class="desplegable"></a>
+  
+  <main>
+    <section class="contenedorHospital">
+      <h4>Mapa de Hospitales Disponibles</h4>
+      <div class="verHospital">  
+        <h5>Hospitales con Unidades de Terapias Intensivas:</h6>    
+        <ul>
+          <li><a id="abrirventana1">Hospital Dr. Alberto Balestrini</a></li>
+          <li><a id="abrirventana2">Hospital de Agudos Paroissien</a></li>
+          <li><a id="abrirventana3">Hospital Posadas</a></li>
+        </ul> 
+      </div>   
+      
+      <div class="popup1">
+        <h2>Informacion del Hospital</h2>
+        <a href="#" id="cerrarventana1">Cerrar</a>
+        <p class="descripcionPopup">Direccion:Av. Monseñor Bufano</p>
+        <p class="descripcionPopup">Localidad:Cdad. Evita,Buenos Aires</p>
+      </div>
+      <div class="popup2">
+        <h2>Informacion del Hospital</h2>
+        <a href="#" id="cerrarventana2">Cerrar</a>
+        <p class="descripcionPopup">Direccion:Avenida Brigadier General Juan Manuel de Rosas 6000</p>
+        <p class="descripcionPopup">Localidad:Isidro Casanova,Buenos Aires</p>
+      </div>
+      <div class="popup3">
+        <h2>Informacion del Hospital</h2>
+        <a href="#" id="cerrarventana3">Cerrar</a>
+        <p class="descripcionPopup">Direccion:Avenida Presidente Arturo U. Illia y Marconi</p>
+        <p class="descripcionPopup">Localidad:El Palomar, Buenos Aires</p>
+      </div>
+
+      <article class="verMapa">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.913327230786!2d-58.535114685178186!3d-34.70736598043266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf49c77b2f7b%3A0xd5052a953205c954!2sHospital%20Dr.%20Alberto%20Balestrini!5e0!3m2!1ses-419!2sar!4v1588270555273!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
+      </article>        
+    </section>
+  </main>
+
+  <footer>
+    <div class="datosAlumno">
+      <p> Datos del grupo:<br>Di Ludovico Maximiliano</p>
+    </div>
+
+    <div class="menuInferior">
+      <p> Menú Inferior:</p>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="enfermedades.html">Enfermedades</a></li>
+           <li><a href="vacunacion.html">Vacunación</a></li>
+           <li><a href="mapasHospitales.html">Hospitales</a></li>
+           <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="RedesSociales">
+        <p> Redes Sociales:</p>
+        <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+        <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>
+  </footer>
+  
+  <!--javascript y jquery-->
+  <!--menu resonsive-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/mapaHospitales.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'all.min.css';
+
+*{
+  margin: 0;
+  padding: 0;
+ 
+}  
+
+/*ver Detalle*/
+.contenedorVerDetalles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+  padding:0.625em 0.625em 0.625em 0.625em;
+}
+
+.verDetalleEnf{
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  width:100%;
+} 
+
+.verDetalleEnf img{
+  max-width: 100%;
+  border-radius: 0.5em;
+  border: 5px solid #fcfdff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.verDetalleEnf h5{
+  color:#005389;
+}
+
+#descripciones{
+  text-align: justify;
+  font-size: 0.75em;
+
+}
+
+#textoEnfermedad{
+  margin-bottom: 0.25em;
+  color:#005389;
+
+}
+ 
+.verDetalle{
+  padding: 1em;
+  box-sizing: border-box;
+  width:100%;
+}
+
+.verDetalle h5{
+  color:#005389;
+} 
+
+.verDetalle img{
+  max-width: 100%;
+}
+
+.verDetalle form{
+  text-align: left;
+}
+
+.verDetalle label{
+  font-size: 1em;
+}
+
+.verDetalle input{
+  text-align: center;
+  margin: 8px 0 8px 0;
+  background-color: #fcfdff;
+}
+
+.redondeado{
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 0px;
+
+}
+
+#detalleEnfermedad{
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+  color:#005389;
+  text-align: center;
+}
+
+#textoPrecaucion{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color:#005389;
+  text-align: center;
+
+}
+
+#textoFormulario{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color:#005389;
+  text-align: center;
+}
+
+#textoHospital{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color:#005389;
+  text-align: center;
+}
+
+.infoFormulario p{
+  text-align: justify;
+  font-size: 0.75em;
+  margin-bottom: 0.3125em;
+}
+.contenedorImagen img{
+  width:calc(50% - 1em);
+}
+
+.btn_Test{
+  font-size: 0.75em;
+  text-decoration: none;
+  padding: 0.25em;
+  border: 1px solid #005389;
+  border-radius: 6px;
+  background-color: #005389;
+  color: #fcfdff;;
+  transition: background-color 0.4s ease 0;
+  padding-left: 118.5px;
+  padding-right: 118.5px;
+
+
+}
+
+.btn_Test:hover{
+  border: 1px solid #0072bd;
+  background-color: #0072bd;
+}
+
+.error{
+  color: crimson;
+  font-size: 0.9em;
+}
+
+.verDetalleImagen{
+  border-radius: 8px;
+  padding: 1em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+
+}
+
+.verDetalleImagen img{
+  max-width: 100%;
+
+}
+
+.contenedorImagenDePrecaucion img{
+  width: calc(25% - 1em);
+  margin-left: 0.25em;
+
+}
+.imagenHospital img{
+  margin-top: 4px;
+  border-radius:8px;
+  border: 5px solid #fcfdff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.verDetalle iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+
+}
+
+.infoMapa p{
+  font-size: 0.75em;
+
+}
+.infoMapa h5{
+  color:#005389;
+
+}
+
+
+/*responsive*/
+@media screen and (min-width: 47em) {
+body{
+
+  font-size: 90%;
+  
+}
+/*ver Detalle*/
+
+.verDetalleEnf{
+  margin-bottom: 0em;
+  width:calc(50% - 1em);
+}
+
+.verDetalle{
+  margin: 0em;
+  width:calc(50% - 1em);
+}
+
+.verDetalle form{
+  text-align: left;
+  font-size: 80%;
+}
+
+.contenedorImagenDePrecaucion img{
+  width: calc(25% - 1em);
+  margin-left: 0.4em;
+  height: 250px;
+
+}
+.btn_Test{
+  padding-left: 128px;
+  padding-right: 128px;
+
+
+}
+
+
+}
+
+@media screen and (min-width: 60em) {
+body{
+
+  font-size: 100%;
+  
+}
+
+.verDetalle form{
+  text-align: left;
+  font-size: 80%;
+}
+
+.contenedorImagenDePrecaucion img{
+  width: calc(25% - 1em);
+  margin-left: 0.8em;
+  height: 250px;
+}
+.btn_Test{
+  padding-left: 125px;
+  padding-right: 125px;
+
+}
+
+
+}
+
+@media screen and (min-width: 80em) {
+body{
+
+  font-size: 106%;
+  
+}
+
+.verDetalle form{
+  text-align: left;
+  font-size: 80%;
+}
+
+.contenedorImagenDePrecaucion img{
+  width: calc(25% - 1em);
+  margin-left: 0.9em;
+  height: 250px;
+}
+
+.btn_Test{
+  padding-left: 125px;
+  padding-right: 125px;
+
+
+}
+
+
+}

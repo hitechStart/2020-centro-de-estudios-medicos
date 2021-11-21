@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluacion De Aprendizaje</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  
+  <!--Responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  
+  <!--calendario-->
+  <link href='fullcalendar/core/main.css' rel='stylesheet' />
+  <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+  
+</head>  
+
+<body> 
+  <header class="header">
+    <div id="logo"><img class="logo" src="img/logo2.png" alt="logotipo"></div>
+
+    <div class="contenedorBusqueda">
+      <datalist id="listaenfermedades">
+        <option value="Coronavirus">
+        <option value="Dengue">
+        <option value="Gripe A">
+        <option value="Hepatitis">
+        <option value="Sarampión">
+        <option value="Tuberculosis">
+      </datalist>
+      <input type="search" name="busqueda" list="listaenfermedades" placeholder=" buscar...">
+      <button  type="submit"><span class="icon-lupa"><i class="fa fa-search"></i></span></button>
+
+    </div>
+
+    <div class="RedesSociales">
+      <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" ></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+      <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>  
+  </header>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="enfermedades.html">Enfermedades</a></li>
+      <li><a href="vacunacion.html">Vacunación</a></li>
+      <li><a href="mapasHospitales.html">Hospitales</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+  </nav>
+  <a class="desplegable"></a>
+  
+  <main>
+    <section class="contenedorCalendario">
+      <h4>Calendario de Vacunación</h4>
+      <article id="calendar" class="verCalendario"></article>         
+    </section>
+  </main>
+
+  <footer>
+    <div class="datosAlumno">
+      <p> Datos del grupo:<br>Di Ludovico Maximiliano</p>
+    </div>
+
+    <div class="menuInferior">
+      <p> Menú Inferior:</p>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="enfermedades.html">Enfermedades</a></li>
+           <li><a href="vacunacion.html">Vacunación</a></li>
+           <li><a href="mapasHospitales.html">Hospitales</a></li>
+           <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="RedesSociales">
+        <p> Redes Sociales:</p>
+        <a href="https://es-la.facebook.com/" target="_blank"><img src="img/face.png" alt="login_facebook"></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><img src="img/twit.png" alt="login_twitter"></a>
+        <a href="https://www.instagram.com/?hl=es-la " target="_blank"><img src="img/inst.png" alt="login_instagram"></a>
+    </div>
+  </footer>
+  
+  <!--javascript y jquery-->
+  <!--menu resonsive-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/funciones.js"></script>
+  
+  <script src='js/calendario.js'></script>
+  <script src='fullcalendar/core/main.js'></script>
+  <script src='fullcalendar/daygrid/main.js'></script>
+</body>
+</html>
